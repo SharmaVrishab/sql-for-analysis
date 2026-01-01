@@ -26,13 +26,14 @@ The focus is on practical, production-relevant SQL skills that frequently appear
 
 ## Repository Structure
 .
-├── phase1-core-fundamentals/
-├── phase2-advanced-transformations/
-├── phase3-production-patterns/
-├── datasets/              # Sample data
-├── exercises/             # Practice problems
-└── README.md              # This file
-textEach SQL file contains:
+├── phase1-core-fundamentals/     # Foundation concepts and basic operations
+├── phase2-advanced-transformations/  # Complex data manipulation techniques
+├── phase3-production-patterns/    # Best practices for production code
+├── datasets/                      # Sample data files for practice
+├── exercises/                     # Hands-on practice problems
+└── README.md                      # Project documentation
+
+Each SQL file contains:
 - Clear explanations
 - Sample data
 - Example queries
