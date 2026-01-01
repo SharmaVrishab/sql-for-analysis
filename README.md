@@ -116,10 +116,6 @@ This is a personal learning project, but suggestions and improvements are welcom
 - Submit a pull request with additional examples
 - Share your own learning experiences
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 **Happy Learning!** 🚀
