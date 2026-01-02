@@ -9,18 +9,21 @@ Build strong, practical SQL skills for data engineering roles through hands-on p
 ## 🗺️ Learning Roadmap
 
 ### Phase 1: Core Fundamentals
+
 - JOINs (INNER, LEFT, handling duplicates)
 - Aggregations with GROUP BY
 - Common Table Expressions (CTEs)
 - CASE statements for data cleaning
 
 ### Phase 2: Advanced Transformations
+
 - Window functions (RANK, ROW_NUMBER, LAG/LEAD, running totals)
 - Subqueries vs JOINs
 - Handling NULLs and data quality
 - Date/time manipulation
 
 ### Phase 3: Production Patterns
+
 - Incremental loading
 - Deduplication techniques
 - Idempotent queries
@@ -40,22 +43,22 @@ Build strong, practical SQL skills for data engineering roles through hands-on p
 
 ### Directory Details
 
-**`phase1-core-fundamentals/`**  
+**`phase1-core-fundamentals/`**
 Foundation concepts and basic operations
 
-**`phase2-advanced-transformations/`**  
+**`phase2-advanced-transformations/`**
 Complex data manipulation techniques
 
-**`phase3-production-patterns/`**  
+**`phase3-production-patterns/`**
 Best practices for production code
 
-**`datasets/`**  
+**`datasets/`**
 Sample data files for practice
 
-**`exercises/`**  
+**`exercises/`**
 Hands-on practice problems
 
-**`README.md`**  
+**`README.md`**
 Project documentation
 
 ### What Each SQL File Contains
@@ -68,11 +71,13 @@ Project documentation
 ## 🚀 How to Use
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    ```
 
 2. **Choose your SQL environment**
+
    - PostgreSQL
    - BigQuery
    - Snowflake
@@ -95,6 +100,7 @@ Project documentation
 ## 🛠️ Technologies
 
 This repository focuses on standard SQL that works across:
+
 - PostgreSQL
 - MySQL
 - BigQuery
@@ -112,6 +118,7 @@ Platform-specific syntax is noted where applicable.
 ## 🤝 Contributing
 
 This is a personal learning project, but suggestions and improvements are welcome! Feel free to:
+
 - Open an issue for corrections or improvements
 - Submit a pull request with additional examples
 - Share your own learning experiences
@@ -120,4 +127,4 @@ This is a personal learning project, but suggestions and improvements are welcom
 
 **Happy Learning!** 🚀
 
-*Building data engineering skills one query at a time.*
+_Building data engineering skills one query at a time._
