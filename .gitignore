@@ -12,7 +12,6 @@ env/
 
 # macOS
 .DS_Store
-.gitignore
 
 # Jupyter
 .ipynb_checkpoints/
