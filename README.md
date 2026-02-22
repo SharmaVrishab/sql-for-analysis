@@ -1,23 +1,5 @@
 # SQL for Data Engineering Roadmap
 
-[![CI Ready](https://img.shields.io/badge/CI-ready-brightgreen)](.github/workflows/ci.yml)
-
-Hands-on **SQL roadmap for data engineering** using notebooks, practice problems, and production-style patterns.
-
-This repository is optimized for:
-- Structured SQL learning from fundamentals to advanced patterns.
-- Recruiter-friendly portfolio visibility on GitHub.
-- Reproducible notebook workflows with shared utilities.
-
-## Why This Repo
-
-If you are learning SQL for roles like **Data Engineer**, **Analytics Engineer**, or **BI Developer**, this roadmap focuses on core job-ready skills:
-- SQL joins and aggregations
-- Common table expressions (CTEs)
-- Window functions
-- Star schema fundamentals
-- Query optimization and production patterns
-
 ## Learning Roadmap
 
 ### Phase 1: Core Fundamentals
