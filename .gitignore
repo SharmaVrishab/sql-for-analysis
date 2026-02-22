@@ -1,13 +1,15 @@
-# Python bytecode
+# Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# VS Code
+# Editor
 .vscode/
 
 # macOS
@@ -16,8 +18,19 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Logs
+# Logs and temp
 *.log
+*.tmp
+*.swp
 
 # Environment variables
 .env
+.env.*
+
+# Local database dumps and data artifacts
+*.sqlite
+*.sqlite3
+*.db
+data/raw/
+data/external/
+data/tmp/

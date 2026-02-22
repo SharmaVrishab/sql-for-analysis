@@ -1,130 +1,90 @@
-# SQL for Data Engineering Learning Project
+# SQL for Data Engineering Roadmap
 
-This repository is my personal learning journey to master **SQL for Data Engineering**. The focus is on practical, production-relevant SQL skills that frequently appear in data engineering job requirements and real-world ETL tasks.
+[![CI Ready](https://img.shields.io/badge/CI-ready-brightgreen)](.github/workflows/ci.yml)
 
-## 🎯 Goal
+Hands-on **SQL roadmap for data engineering** using notebooks, practice problems, and production-style patterns.
 
-Build strong, practical SQL skills for data engineering roles through hands-on practice with real-world scenarios.
+This repository is optimized for:
+- Structured SQL learning from fundamentals to advanced patterns.
+- Recruiter-friendly portfolio visibility on GitHub.
+- Reproducible notebook workflows with shared utilities.
 
-## 🗺️ Learning Roadmap
+## Why This Repo
 
-### Phase 1: Core Fundamentals
+If you are learning SQL for roles like **Data Engineer**, **Analytics Engineer**, or **BI Developer**, this roadmap focuses on core job-ready skills:
+- SQL joins and aggregations
+- Common table expressions (CTEs)
+- Window functions
+- Star schema fundamentals
+- Query optimization and production patterns
 
-- JOINs (INNER, LEFT, handling duplicates)
-- Aggregations with GROUP BY
-- Common Table Expressions (CTEs)
-- CASE statements for data cleaning
+## Learning Roadmap
 
-### Phase 2: Advanced Transformations
+Roadmap detail: `docs/roadmap.md`  
+Roadmap checklist: `docs/roadmap_checklist.md`
 
-- Window functions (RANK, ROW_NUMBER, LAG/LEAD, running totals)
-- Subqueries vs JOINs
-- Handling NULLs and data quality
-- Date/time manipulation
+### Phase Progress
 
-### Phase 3: Production Patterns
+- [x] Phase 1: Core Fundamentals (notebooks organized and runnable)
+- [x] Phase 2: Practice Problems (weekly practice track active)
+- [ ] Phase 3: Production Patterns (next milestone)
 
-- Incremental loading
-- Deduplication techniques
-- Idempotent queries
-- Basic query optimization
+## Start Learning
 
-## 📁 Repository Structure
-
+1. Install dependencies:
+```bash
+python3 -m pip install -r requirements.txt
 ```
+
+2. Export PostgreSQL variables:
+```bash
+export PGHOST=localhost
+export PGPORT=5432
+export PGDATABASE=learning
+export PGUSER=postgres
+export PGPASSWORD=postgres
+```
+
+3. Open any notebook in `notebooks/` and run the first bootstrap cell.
+
+## Recommended Notebook Order
+
+1. `notebooks/01_core_fundamentals/00_basics/main.ipynb`
+2. `notebooks/01_core_fundamentals/02_joins/basic.ipynb`
+3. `notebooks/01_core_fundamentals/03_ctes/ctes.ipynb`
+4. `notebooks/01_core_fundamentals/04_window_functions/window_functions.ipynb`
+5. `notebooks/02_practice_problems/week_01/main.ipynb`
+
+## Repository Structure
+
+```text
 .
-├── phase1-core-fundamentals/
-├── phase2-advanced-transformations/
-├── phase3-production-patterns/
-├── datasets/
-├── exercises/
-└── README.md
+├── .github/                     # CI, templates
+├── data/                        # Tiny sample-only tracked data
+├── docs/                        # Roadmap, checklist, repo strategy
+├── notebooks/                   # SQL learning path
+├── scripts/                     # Repo validation scripts
+├── src/sql_for_analysis/        # Shared Python helpers
+├── tests/                       # Unit/interface tests
+├── CONTRIBUTING.md
+├── README.md
+└── requirements.txt
 ```
 
-### Directory Details
+Detailed structure: `docs/project_structure.md`
 
-**`phase1-core-fundamentals/`**
-Foundation concepts and basic operations
+## Validation
 
-**`phase2-advanced-transformations/`**
-Complex data manipulation techniques
+```bash
+PYTHONPATH=src python3 -m pytest -q
+python3 scripts/verify_notebook_imports.py
+```
 
-**`phase3-production-patterns/`**
-Best practices for production code
+## GitHub Discoverability Checklist
 
-**`datasets/`**
-Sample data files for practice
+See `docs/github_discoverability.md` for repo settings and publishing best practices (topics, release cadence, social preview, pinned roadmap updates).
 
-**`exercises/`**
-Hands-on practice problems
+## Data Policy
 
-**`README.md`**
-Project documentation
-
-### What Each SQL File Contains
-
-- ✅ Clear explanations
-- ✅ Sample data
-- ✅ Example queries
-- ✅ Notes on best practices
-
-## 🚀 How to Use
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
-
-2. **Choose your SQL environment**
-
-   - PostgreSQL
-   - BigQuery
-   - Snowflake
-   - DB Fiddle
-   - Or any SQL environment you prefer
-
-3. **Start learning**
-   - Navigate to Phase 1 to begin
-   - Open SQL files in your chosen environment
-   - Run and experiment with the queries
-   - Complete exercises to reinforce learning
-
-## 💡 Learning Approach
-
-- **Hands-on practice** - Every concept includes runnable examples
-- **Real-world scenarios** - Problems mirror actual data engineering tasks
-- **Progressive difficulty** - Build skills incrementally from fundamentals to advanced patterns
-- **Production-focused** - Learn patterns used in professional environments
-
-## 🛠️ Technologies
-
-This repository focuses on standard SQL that works across:
-
-- PostgreSQL
-- MySQL
-- BigQuery
-- Snowflake
-- Redshift
-
-Platform-specific syntax is noted where applicable.
-
-## 📈 Progress Tracking
-
-- [ ] Phase 1: Core Fundamentals
-- [ ] Phase 2: Advanced Transformations
-- [ ] Phase 3: Production Patterns
-
-## 🤝 Contributing
-
-This is a personal learning project, but suggestions and improvements are welcome! Feel free to:
-
-- Open an issue for corrections or improvements
-- Submit a pull request with additional examples
-- Share your own learning experiences
-
----
-
-**Happy Learning!** 🚀
-
-_Building data engineering skills one query at a time._
+- Keep only lightweight sample data in `data/sample/`.
+- Do not commit large/raw datasets or secrets.
