@@ -20,14 +20,60 @@ If you are learning SQL for roles like **Data Engineer**, **Analytics Engineer**
 
 ## Learning Roadmap
 
-Roadmap detail: `docs/roadmap.md`  
-Roadmap checklist: `docs/roadmap_checklist.md`
+### Phase 1: Core Fundamentals
 
-### Phase Progress
+Goal: Build fluency in SQL building blocks and analytics query patterns.
 
-- [x] Phase 1: Core Fundamentals (notebooks organized and runnable)
-- [x] Phase 2: Practice Problems (weekly practice track active)
-- [ ] Phase 3: Production Patterns (next milestone)
+- Basic SQL query flow (`SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`)
+- JOIN patterns and duplicate handling
+- CTE structuring
+- Window functions (`ROW_NUMBER`, `RANK`, `LAG`, `LEAD`)
+- Star schema basics
+
+Primary notebooks:
+- `notebooks/01_core_fundamentals/00_basics/main.ipynb`
+- `notebooks/01_core_fundamentals/02_joins/basic.ipynb`
+- `notebooks/01_core_fundamentals/03_ctes/ctes.ipynb`
+- `notebooks/01_core_fundamentals/04_window_functions/window_functions.ipynb`
+
+### Phase 2: Practice Problems
+
+Goal: Improve speed, accuracy, and query readability under problem-solving constraints.
+
+- Weekly SQL drills
+- Query refactoring
+- Tradeoff discussion between readability and performance
+
+Primary notebook:
+- `notebooks/02_practice_problems/week_01/main.ipynb`
+
+### Phase 3: Production Patterns
+
+Goal: Move from learning SQL syntax to shipping reliable SQL pipelines.
+
+- Incremental loading patterns
+- Idempotent query design
+- Deduplication strategies
+- Data quality checks
+- Query performance analysis
+
+## Phase Progress
+
+- [x] Phase 1: Core Fundamentals
+- [x] Phase 2: Practice Problems
+- [ ] Phase 3: Production Patterns
+
+## Roadmap Checklist
+
+- [x] Basic SQL notebook completed
+- [x] JOIN notebook completed
+- [x] CTE notebook completed
+- [x] Window functions notebook completed
+- [x] Star schema notebook completed
+- [x] Week 1 practice notebook added
+- [ ] Week 2 practice notebook added
+- [ ] Week 3 practice notebook added
+- [ ] Add production-pattern notebooks
 
 ## Start Learning
 
@@ -61,7 +107,6 @@ export PGPASSWORD=postgres
 .
 ├── .github/                     # CI, templates
 ├── data/                        # Tiny sample-only tracked data
-├── docs/                        # Roadmap, checklist, repo strategy
 ├── notebooks/                   # SQL learning path
 ├── scripts/                     # Repo validation scripts
 ├── src/sql_for_analysis/        # Shared Python helpers
@@ -71,7 +116,12 @@ export PGPASSWORD=postgres
 └── requirements.txt
 ```
 
-Detailed structure: `docs/project_structure.md`
+## GitHub Discoverability Checklist
+
+- Set repository topics: `sql`, `data-engineering`, `analytics-engineering`, `postgresql`, `notebooks`, `portfolio`, `learning-roadmap`
+- Keep weekly commit cadence tied to roadmap milestones.
+- Use descriptive PR titles reflecting completed learning milestones.
+- Keep checklist and phase progress updated after each major change.
 
 ## Validation
 
@@ -79,10 +129,6 @@ Detailed structure: `docs/project_structure.md`
 PYTHONPATH=src python3 -m pytest -q
 python3 scripts/verify_notebook_imports.py
 ```
-
-## GitHub Discoverability Checklist
-
-See `docs/github_discoverability.md` for repo settings and publishing best practices (topics, release cadence, social preview, pinned roadmap updates).
 
 ## Data Policy
 
