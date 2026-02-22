@@ -115,22 +115,3 @@ export PGPASSWORD=postgres
 ├── README.md
 └── requirements.txt
 ```
-
-## GitHub Discoverability Checklist
-
-- Set repository topics: `sql`, `data-engineering`, `analytics-engineering`, `postgresql`, `notebooks`, `portfolio`, `learning-roadmap`
-- Keep weekly commit cadence tied to roadmap milestones.
-- Use descriptive PR titles reflecting completed learning milestones.
-- Keep checklist and phase progress updated after each major change.
-
-## Validation
-
-```bash
-PYTHONPATH=src python3 -m pytest -q
-python3 scripts/verify_notebook_imports.py
-```
-
-## Data Policy
-
-- Keep only lightweight sample data in `data/sample/`.
-- Do not commit large/raw datasets or secrets.
